@@ -12,7 +12,7 @@ Página pública com o currículo e os 9 certificados de capacitação profissio
 - Registro: **CRF-BA 022070**
 - E-mail: mendessjr90@gmail.com
 - Telefone: +55 71 99603-4820
-- LinkedIn: https://www.linkedin.com/in/junior-mendes-818395449/
+- LinkedIn: https://www.linkedin.com/in/a-junior-mendes/
 - Catu / BA
 
 ## Certificados (394 horas)
