@@ -2,7 +2,7 @@
 
 Página pública com o currículo e os 9 certificados de capacitação profissional.
 
-- **Site:** https://pharmacy-certificates-13h8zdlso2j.qoder.website
+- **Site:** https://junior-mendes-certificados.vercel.app
 - **Currículo (PDF):** [curriculo-antonio-mendes-dos-santos-junior.pdf](curriculo-antonio-mendes-dos-santos-junior.pdf)
 - **Currículo editável (Word):** [curriculo-antonio-mendes-dos-santos-junior.docx](curriculo-antonio-mendes-dos-santos-junior.docx)
 
@@ -41,4 +41,4 @@ curriculo-antonio-mendes-dos-santos-junior.docx
 certificados/*.pdf
 ```
 
-Para publicar no GitHub Pages, use a branch `main` e a raiz do repositório como fonte.
+O site é publicado automaticamente pela Vercel a partir da branch `main` deste repositório.
