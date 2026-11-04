@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Certificados · Antônio Mendes dos Santos Júnior — Farmacêutico</title>
+<meta name="description" content="Portfólio de certificados e capacitações do farmacêutico Antônio Mendes dos Santos Júnior: assistência farmacêutica, farmácia hospitalar, gestão do SUS e boas práticas.">
+<meta name="theme-color" content="#0E4A45">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F7F5F0;
+    --paper-2:#FFFDF9;
+    --ink:#16211D;
+    --ink-soft:#4B5A53;
+    --line:#DDD8CC;
+    --teal:#0E4A45;
+    --teal-2:#17675F;
+    --sage:#8FAF9F;
+    --sand:#C8A97E;
+    --radius:18px;
+    --serif:"Fraunces",Georgia,"Times New Roman",serif;
+    --sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;background:var(--paper);color:var(--ink);
+    font-family:var(--sans);font-weight:400;line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 28px}
+  .eyebrow{
+    font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;
+    font-weight:600;color:var(--teal-2);
+  }
+
+  /* ---------- top bar ---------- */
+  .topbar{
+    display:flex;align-items:center;justify-content:space-between;gap:16px;
+    padding:22px 0;border-bottom:1px solid var(--line);
+  }
+  .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+  .monogram{
+    width:38px;height:38px;border-radius:50%;
+    background:var(--teal);color:#fff;display:grid;place-items:center;
+    font-family:var(--serif);font-size:.95rem;letter-spacing:.02em;
+  }
+  .brand small{display:block;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);line-height:1.2}
+  .brand strong{font-family:var(--serif);font-weight:500;font-size:1.02rem;line-height:1.2}
+  .topmeta{font-size:.8rem;color:var(--ink-soft);display:flex;align-items:center;gap:10px}
+  .dot{width:5px;height:5px;border-radius:50%;background:var(--sand);display:inline-block}
+
+  /* ---------- hero ---------- */
+  .hero{display:grid;grid-template-columns:1.5fr .85fr;gap:56px;align-items:center;padding:52px 0 36px}
+  .hero h1{
+    font-family:var(--serif);font-weight:500;letter-spacing:-.015em;
+    font-size:clamp(2.1rem,4.4vw,3.35rem);line-height:1.06;margin:16px 0 0;
+  }
+  .hero h1 span{
+    display:block;color:var(--teal-2);font-size:.42em;line-height:1.2;
+    font-weight:500;margin-top:.45em;letter-spacing:0;
+  }
+  .hero p{color:var(--ink-soft);max-width:48ch;margin:20px 0 0;font-size:1.02rem}
+  .contact-line{
+    margin-top:22px;font-size:.84rem;color:var(--ink-soft);
+    display:flex;flex-wrap:wrap;align-items:center;gap:8px;
+  }
+  .contact-line a{
+    color:var(--teal-2);text-decoration:none;border-bottom:1px solid rgba(14,74,69,.25);
+    padding-bottom:1px;
+  }
+  .contact-line a:hover{border-color:var(--teal)}
+  .contact-line span{color:var(--sage)}
+  .portrait{
+    justify-self:end;width:100%;max-width:258px;position:relative;
+  }
+  .portrait img{
+    width:100%;aspect-ratio:3/4;object-fit:cover;object-position:50% 18%;
+    border-radius:160px 160px var(--radius) var(--radius);
+    border:1px solid var(--line);display:block;filter:saturate(.96);
+  }
+  .portrait figcaption{
+    margin-top:12px;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;
+    color:var(--ink-soft);text-align:center;
+  }
+
+  /* ---------- actions ---------- */
+  .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+  .btn{
+    display:inline-flex;align-items:center;gap:10px;text-decoration:none;
+    font-size:.86rem;font-weight:600;letter-spacing:.01em;
+    padding:13px 20px;border-radius:999px;
+    background:var(--teal);color:#F7F5F0;border:1px solid var(--teal);
+    transition:background .2s ease,transform .2s ease;
+  }
+  .btn:hover{background:var(--teal-2);transform:translateY(-1px)}
+  .btn.ghost{background:transparent;color:var(--teal);border-color:rgba(14,74,69,.28)}
+  .btn.ghost:hover{background:rgba(14,74,69,.06)}
+  .btn:focus-visible{outline:2px solid var(--teal-2);outline-offset:3px}
+
+  /* ---------- list ---------- */
+  section.certs{padding:44px 0 24px}
+  .section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:34px}
+  .section-head h2{
+    font-family:var(--serif);font-weight:500;font-size:clamp(1.5rem,2.8vw,2rem);
+    margin:10px 0 0;letter-spacing:-.01em;line-height:1.15;
+  }
+  .section-head p{margin:0;max-width:30ch;font-size:.9rem;color:var(--ink-soft);text-align:right}
+
+  .cards{display:grid;gap:14px}
+  .card{
+    display:grid;grid-template-columns:64px 1fr auto;gap:24px;align-items:center;
+    background:var(--paper-2);border:1px solid var(--line);border-radius:var(--radius);
+    padding:26px 26px 26px 26px;text-decoration:none;
+    transition:border-color .2s ease,transform .2s ease,box-shadow .25s ease;
+  }
+  .card:hover,.card:focus-visible{
+    border-color:var(--sage);transform:translateY(-2px);
+    box-shadow:0 12px 28px -22px rgba(14,74,69,.55);outline:none;
+  }
+  .card:target{border-color:var(--teal);box-shadow:0 0 0 3px rgba(14,74,69,.12)}
+  .idx{
+    font-family:var(--serif);font-size:1.05rem;color:var(--sage);
+    border-right:1px solid var(--line);align-self:stretch;display:flex;align-items:center;
+  }
+  .card-body h3{
+    margin:0;font-family:var(--serif);font-weight:500;font-size:1.22rem;line-height:1.3;letter-spacing:-.005em;
+  }
+  .issuer{margin:6px 0 0;font-size:.88rem;color:var(--ink-soft)}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+  .chip{
+    font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;font-weight:500;
+    padding:4px 10px;border-radius:999px;border:1px solid var(--line);color:var(--ink-soft);
+    background:#fff;
+  }
+  .chip.hours{border-color:rgba(14,74,69,.25);color:var(--teal-2);background:rgba(14,74,69,.05)}
+  .go{
+    display:inline-flex;align-items:center;gap:9px;font-size:.8rem;font-weight:600;
+    letter-spacing:.04em;color:var(--teal);white-space:nowrap;
+  }
+  .go svg{transition:transform .2s ease}
+  .card:hover .go svg{transform:translate(2px,-2px)}
+
+  /* ---------- footer ---------- */
+  footer{margin-top:64px;border-top:1px solid var(--line);padding:34px 0 46px;color:var(--ink-soft);font-size:.84rem}
+  .foot-inner{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;align-items:center}
+  .foot-note{max-width:52ch}
+  .foot-inner a{color:var(--teal);text-decoration:none;border-bottom:1px solid rgba(14,74,69,.28);padding-bottom:1px}
+  .foot-inner a:hover{border-color:var(--teal)}
+
+  @media (max-width:860px){
+    .hero{grid-template-columns:1fr;gap:32px;padding:44px 0 40px}
+    .portrait{justify-self:start;max-width:210px;order:-1}
+    .hero h1{font-size:clamp(1.9rem,7vw,2.6rem)}
+    .section-head{flex-direction:column;align-items:flex-start;gap:12px}
+    .section-head p{text-align:left}
+    .card{grid-template-columns:1fr;gap:14px;padding:22px}
+    .idx{border-right:0;border-bottom:1px solid var(--line);padding-bottom:10px}
+    .go{justify-self:start}
+    .topmeta{display:none}
+  }
+  @media (prefers-reduced-motion:reduce){
+    *{transition:none!important;scroll-behavior:auto!important}
+  }
+  @media print{
+    body{background:#fff}
+    .topbar,.portrait,.go{display:none}
+    .card{break-inside:avoid;box-shadow:none}
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header class="topbar">
+    <a class="brand" href="#top">
+      <span class="monogram">AM</span>
+      <span>
+        <small>Currículo</small>
+        <strong>Antônio Mendes dos Santos Júnior</strong>
+      </span>
+    </a>
+    <div class="topmeta">
+      <span class="dot"></span> Farmácia · Assistência Farmacêutica
+      <span class="dot"></span> Catu, Bahia
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div>
+        <div class="eyebrow">Certificados e capacitações</div>
+        <h1>Farmacêutico<span>Antônio Mendes dos Santos Júnior</span></h1>
+        <p>
+          Farmacêutico formado pela UNIFTC (2025.1) e registrado no CRF-BA (022070).
+          Atua em assistência farmacêutica no SUS — farmácia básica municipal e CAPS — com foco
+          em segurança do paciente e uso racional de medicamentos. Reúne 394 horas de capacitação
+          certificada em farmácia hospitalar, gestão do SUS, assistência farmacêutica e boas práticas.
+        </p>
+        <div class="hero-actions">
+          <a class="btn" href="curriculo-antonio-mendes-dos-santos-junior.pdf?v=3" target="_blank" rel="noopener">
+            Baixar currículo em PDF
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 4v12m0 0 5-5m-5 5-5-5M5 20h14"/></svg>
+          </a>
+          <a class="btn ghost" href="https://www.linkedin.com/in/junior-mendes-818395449/" target="_blank" rel="noopener">
+            LinkedIn
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+          </a>
+        </div>
+        <p class="contact-line">
+          <a href="mailto:mendessjr90@gmail.com">mendessjr90@gmail.com</a>
+          <span>·</span>
+          <a href="tel:+5571996034820">+55 71 99603-4820</a>
+          <span>·</span> Catu/BA
+          <span>·</span> CRF-BA 022070
+        </p>
+      </div>
+      <figure class="portrait">
+        <img src="foto.jpg" alt="Retrato profissional de Antônio Mendes dos Santos Júnior">
+        <figcaption>Farmacêutico</figcaption>
+      </figure>
+    </section>
+
+    <section class="certs" aria-labelledby="certs-title">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">Formação complementar</div>
+          <h2 id="certs-title">Certificados e capacitações</h2>
+        </div>
+        <p>Clique para abrir o PDF original.</p>
+      </div>
+
+      <div class="cards">
+
+        <a class="card" id="farmacia-hospitalar" href="certificados/farmacia-hospitalar.pdf" target="_blank" rel="noopener">
+          <div class="idx">01</div>
+          <div class="card-body">
+            <h3>Farmácia Hospitalar</h3>
+            <p class="issuer">VENES · Grupo Intra de Ensino e Pesquisa</p>
+            <div class="chips"><span class="chip hours">180 horas</span><span class="chip">Farmácia clínica</span><span class="chip">2023</span></div>
+          </div>
+          <span class="go">Abrir PDF
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+          </span>
+        </a>
+
+        <a class="card" id="medicamentos-na-atencao-primaria-sus" href="certificados/medicamentos-na-atencao-primaria-sus.pdf" target="_blank" rel="noopener">
+          <div class="idx">02</div>
+          <div class="card-body">
+            <h3>Medicamentos na Atenção Primária no SUS</h3>
+            <p class="issuer">UNA-SUS · Universidade Federal de São Paulo (UNIFESP)</p>
+            <div class="chips"><span class="chip hours">60 horas</span><span class="chip">Uso racional</span><span class="chip">2021</span></div>
+          </div>
+          <span class="go">Abrir PDF
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+          </span>
+        </a>
+
+        <a class="card" id="politicas-de-saude-e-assistencia-farmaceutica-sus" href="certificados/politicas-de-saude-e-assistencia-farmaceutica-sus.pdf" target="_blank" rel="noopener">
+          <div class="idx">03</div>
+          <div class="card-body">
+            <h3>Políticas de Saúde e Assistência Farmacêutica no SUS</h3>
+            <p class="issuer">Fiocruz Brasília · Escola de Governo Fiocruz</p>
+            <div class="chips"><span class="chip hours">40 horas</span><span class="chip">Gestão do SUS</span><span class="chip">2023</span></div>
+          </div>
+          <span class="go">Abrir PDF
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+          </span>
+        </a>
+
+        <a class="card" id="iii-conbracif" href="certificados/iii-conbracif.pdf" target="_blank" rel="noopener">
+          <div class="idx">04</div>
+          <div class="card-body">
+            <h3>III Congresso Brasileiro de Ciências Farmacêuticas</h3>
+            <p class="issuer">III CONBRACIF · Fortaleza, CE</p>
+            <div class="chips"><span class="chip hours">40 horas</span><span class="chip">Congresso</span><span class="chip">2022</span></div>
+          </div>
+          <span class="go">Abrir PDF
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+          </span>
+        </a>
+
+        <a class="card" id="planejamento-em-saude" href="certificados/planejamento-em-saude.pdf" target="_blank" rel="noopener">
+          <div class="idx">05</div>
+          <div class="card-body">
+            <h3>Planejamento em Saúde</h3>
+            <p class="issuer">UNA-SUS · Fiocruz Mato Grosso do Sul</p>
+            <div class="chips"><span class="chip hours">30 horas</span><span class="chip">Gestão</span><span class="chip">2021</span></div>
+          </div>
+          <span class="go">Abrir PDF
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+          </span>
+        </a>
+
+        <a class="card" id="implantacao-servicos-farmacia-comunitaria" href="certificados/implantacao-servicos-farmacia-comunitaria.pdf" target="_blank" rel="noopener">
+          <div class="idx">06</div>
+          <div class="card-body">
+            <h3>Etapas de Implantação dos Serviços na Farmácia Comunitária</h3>
+            <p class="issuer">Conselho Federal de Farmácia (CFF) · Edu.Farma — RDC 44/09 e RDC 786/23</p>
+            <div class="chips"><span class="chip hours">30 horas</span><span class="chip">Serviços farmacêuticos</span><span class="chip">2020</span></div>
+          </div>
+          <span class="go">Abrir PDF
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+          </span>
+        </a>
+
+        <a class="card" id="habilitacao-em-injetaveis" href="certificados/habilitacao-em-injetaveis.pdf" target="_blank" rel="noopener">
+          <div class="idx">07</div>
+          <div class="card-body">
+            <h3>Habilitação em Injetáveis — Teórico e Prático</h3>
+            <p class="issuer">Health Consulting Treinamento · Salvador, BA</p>
+            <div class="chips"><span class="chip hours">10 horas</span><span class="chip">Procedimentos</span><span class="chip">2022</span></div>
+          </div>
+          <span class="go">Abrir PDF
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+          </span>
+        </a>
+
+        <a class="card" id="boas-praticas-armazenagem" href="certificados/boas-praticas-armazenagem-distribuicao-transporte.pdf" target="_blank" rel="noopener">
+          <div class="idx">08</div>
+          <div class="card-body">
+            <h3>Boas Práticas de Armazenagem, Distribuição e Transporte de Medicamentos</h3>
+            <p class="issuer">Conselho Regional de Farmácia de Goiás (CRF-GO)</p>
+            <div class="chips"><span class="chip hours">2 horas</span><span class="chip">Logística farmacêutica</span><span class="chip">2022</span></div>
+          </div>
+          <span class="go">Abrir PDF
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+          </span>
+        </a>
+
+        <a class="card" id="atencao-ao-paciente-oncologico" href="certificados/atencao-ao-paciente-oncologico.pdf" target="_blank" rel="noopener">
+          <div class="idx">09</div>
+          <div class="card-body">
+            <h3>Atuação do Farmacêutico na Atenção ao Paciente Oncológico</h3>
+            <p class="issuer">Conselho Regional de Farmácia de Goiás (CRF-GO)</p>
+            <div class="chips"><span class="chip hours">2 horas</span><span class="chip">Oncologia</span><span class="chip">2022</span></div>
+          </div>
+          <span class="go">Abrir PDF
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+          </span>
+        </a>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="foot-inner">
+      <p class="foot-note">
+        Certificados emitidos por CFF, CRF-GO, Fiocruz, UNA-SUS/UNIFESP, VENES e Health Consulting.
+        Documentos disponíveis para conferência de autenticidade junto às instituições emissoras.
+        <a href="curriculo-antonio-mendes-dos-santos-junior.pdf?v=3" target="_blank" rel="noopener">Currículo completo em PDF</a>.
+      </p>
+      <span>Atualizado em novembro de 2026</span>
+    </div>
+  </footer>
+</div>
+
+</body>
+</html>
